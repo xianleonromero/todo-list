@@ -1,9 +1,25 @@
+/*distancia entre input y button, centrados y margen arriba*/
+.task-input-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top:15px;
+}
+
 .task-input-container input {
   padding: 10px;
   font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
 }
 
 .task-input-container button {
   padding: 10px 20px;
   font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  /*cuando se pasa el ratón por encima aparece el dedo para clicar*/
+  cursor: pointer;
 }
