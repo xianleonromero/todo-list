@@ -1,0 +1,9 @@
+.task-input-container input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.task-input-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+}

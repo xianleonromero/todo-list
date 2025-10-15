@@ -1,6 +1,7 @@
+import './TaskInput.css';
 function TaskInput() {
   return (
-    <div>
+    <div className="task-input-container">
       <input type="text" placeholder="Nueva tarea..." />
       <button>Añadir</button>
     </div>
