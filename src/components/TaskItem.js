@@ -1,7 +1,9 @@
+import './TaskItem.css';
 function TaskItem({tarea}) {
   return (
     <li className="task-item">
-      {tarea}
+      <span>{tarea}</span>
+      <button>X</button>
     </li>
   );
 }
