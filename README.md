@@ -1,70 +1,146 @@
-# Getting Started with Create React App
+# 📝 Lista de Tareas - Todo List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicación simple de lista de tareas desarrollada con React. Permite añadir y eliminar tareas de forma intuitiva.
 
-## Available Scripts
+## 🚀 [**USAR AHORA**](https://xianleonromero.github.io/todo-list)
 
-In the project directory, you can run:
+![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📋 Características
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+✅ **Añadir tareas** - Escribe y añade tareas fácilmente  
+✅ **Eliminar tareas** - Botón para eliminar tareas completadas  
+✅ **Atajo de teclado** - Pulsa Enter para añadir tareas rápidamente  
+✅ **Interfaz intuitiva** - Diseño limpio y fácil de usar  
+✅ **Componentes modulares** - Código organizado en componentes reutilizables  
+✅ **Responsive** - Se adapta a diferentes tamaños de pantalla  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎯 Cómo Usar
 
-### `npm run build`
+1. Escribe una tarea en el campo de texto
+2. Presiona **Enter** o haz click en **Añadir**
+3. La tarea aparece en la lista
+4. Para eliminar, haz click en la **X** roja
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tecnologías Utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React 18.3.1** - Biblioteca de JavaScript para construir interfaces de usuario
+- **React Hooks** - useState para el manejo del estado
+- **CSS3** - Estilos personalizados con flexbox y efectos hover
+- **GitHub Pages** - Hosting y despliegue
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Instalación Local
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Si quieres ejecutar el proyecto en tu máquina local:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerrequisitos
+- Node.js instalado (versión 14 o superior)
+- npm o yarn
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Pasos
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/xianleonromero/todo-list.git
 
-## Learn More
+# 2. Entrar al directorio del proyecto
+cd todo-list
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 3. Instalar las dependencias
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 4. Iniciar el servidor de desarrollo
+npm start
+```
 
-### Code Splitting
+La aplicación se abrirá automáticamente en tu navegador en `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📦 Scripts Disponibles
+```bash
+npm start          # Inicia el servidor de desarrollo
+npm run build      # Crea una versión optimizada para producción
+npm test           # Ejecuta los tests
+npm run deploy     # Despliega la aplicación en GitHub Pages
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📂 Estructura del Proyecto
+```
+todo-list/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── TaskInput.js
+│   │   ├── TaskInput.css
+│   │   ├── TaskList.js
+│   │   ├── TaskList.css
+│   │   ├── TaskItem.js
+│   │   └── TaskItem.css
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🧩 Componentes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### App.js
+Componente principal que gestiona el estado de las tareas y coordina los componentes hijos.
 
-### Deployment
+### TaskInput
+Campo de entrada y botón para añadir nuevas tareas. Maneja el evento Enter para mayor comodidad.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### TaskList
+Lista que renderiza todas las tareas usando el componente TaskItem.
 
-### `npm run build` fails to minify
+### TaskItem
+Componente individual para cada tarea con su botón de eliminación.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 🎨 Características de Diseño
+
+- **Paleta de colores**: Verdes para acciones positivas, rojos para eliminar
+- **Espaciado consistente**: Márgenes y paddings armoniosos
+- **Sombras sutiles**: Dan profundidad a los elementos
+- **Esquinas redondeadas**: Diseño moderno y suave
+- **Efectos hover**: Feedback visual al interactuar
+
+---
+
+## 🔮 Posibles Mejoras Futuras
+
+- [ ] Checkbox para marcar tareas como completadas
+- [ ] Persistencia con localStorage
+- [ ] Editar tareas existentes
+- [ ] Filtros (todas/activas/completadas)
+- [ ] Drag & drop para reordenar
+- [ ] Modo oscuro
+
+---
+
+## 👤 Autor
+
+**Xian Leon Romero**
+
+- GitHub: [@xianleonromero](https://github.com/xianleonromero)
+- Proyecto: [Lista de Tareas](https://github.com/xianleonromero/todo-list)
+- Demo: [Usar Online](https://xianleonromero.github.io/todo-list)
