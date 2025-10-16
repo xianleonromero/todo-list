@@ -1,9 +1,12 @@
 import './TaskItem.css';
-function TaskItem({tarea}) {
+function TaskItem({tarea,index,eliminarTarea}) {
+  const manejarEliminar=()=>{
+    eliminarTarea(index);
+  }
   return (
     <li className="task-item">
       <span>{tarea}</span>
-      <button>X</button>
+      <button onClick={manejarEliminar}>X</button>
     </li>
   );
 }
